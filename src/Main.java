@@ -15,10 +15,9 @@ public class Main {
         numbers[1] = 2;
         numbers[2] = 3;
         for (int i = 0; i < numbers.length; i++) {
-            if (i < (numbers.length - 1)) {
-                System.out.print(numbers[i] + ", ");
-            } else {
-                System.out.print(numbers[i]);
+            System.out.print(numbers[i]);
+            if (i != (numbers.length - 1)) {
+                System.out.print(", ");
             }
         }
         System.out.print("\n");
@@ -35,10 +34,9 @@ public class Main {
 
         String [] things = {"книга", "компьютер", "стол", "телефон"};
         for (int i = 0; i < things.length; i++) {
-            if (i < (things.length - 1)) {
-                System.out.print(things[i] + ", ");
-            } else {
-                System.out.print(things[i]);
+            System.out.print(things[i]);
+            if (i != (things.length - 1)) {
+                System.out.print(", ");
             }
         }
         System.out.println("\n");
@@ -50,10 +48,9 @@ public class Main {
 //  элементом следующего не нужна.
         System.out.println("Задача 3");
         for (int i = (numbers.length - 1); i >= 0; i--) {
+            System.out.print(numbers[i]);
             if (i > 0) {
-                System.out.print(numbers[i] + ", ");
-            } else {
-                System.out.print(numbers[i]);
+                System.out.print(", ");
             }
         }
         System.out.print("\n");
@@ -68,10 +65,9 @@ public class Main {
         System.out.print('\n');
 
         for (int i = (things.length - 1); i >= 0; i--) {
+            System.out.print(things[i]);
             if (i > 0) {
-                System.out.print(things[i] + ", ");
-            } else {
-                System.out.print(things[i]);
+                System.out.print(", ");
             }
         }
         System.out.println("\n");
@@ -83,11 +79,11 @@ public class Main {
         System.out.println("Задача 4");
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 != 0) {
-                numbers[i] += 1;}
-            if (i < (numbers.length - 1)) {
-            System.out.print(numbers[i] + ", ");
-            } else {
-                System.out.print(numbers[i]);
+                numbers[i] += 1;
+            }
+            System.out.print(numbers[i]);
+            if (i != (numbers.length - 1)) {
+                System.out.print(", ");
             }
         }
     }
